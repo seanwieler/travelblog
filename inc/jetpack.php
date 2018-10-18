@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package travelblog
+ * @package Travel_Blog
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function travelblog_jetpack_setup() {
+function travel_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'travelblog_infinite_scroll_render',
+		'render'    => 'travel_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function travelblog_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'travelblog-style',
+			'stylesheet' => 'travel-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function travelblog_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'travelblog_jetpack_setup' );
+add_action( 'after_setup_theme', 'travel_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function travelblog_infinite_scroll_render() {
+function travel_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

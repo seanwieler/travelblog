@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package travelblog
+ * @package Travel_Blog
  */
 
 get_header();
