@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Travel_Blog
+ * @package travelblog
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses travel_header_style()
+ * @uses travelblog_header_style()
  */
-function travel_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'travel_custom_header_args', array(
+function travelblog_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'travelblog_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'travel_header_style',
+		'wp-head-callback'       => 'travelblog_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'travel_custom_header_setup' );
+add_action( 'after_setup_theme', 'travelblog_custom_header_setup' );
 
-if ( ! function_exists( 'travel_header_style' ) ) :
+if ( ! function_exists( 'travelblog_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see travel_custom_header_setup().
+	 * @see travelblog_custom_header_setup().
 	 */
-	function travel_header_style() {
+	function travelblog_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

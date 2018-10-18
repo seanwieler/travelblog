@@ -1,13 +1,13 @@
 <?php
 /**
- * Travel Blog functions and definitions
+ * travelblog functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Travel_Blog
+ * @package travelblog
  */
 
-if ( ! function_exists( 'travel_setup' ) ) :
+if ( ! function_exists( 'travelblog_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'travel_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function travel_setup() {
+	function travelblog_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Travel Blog, use a find and replace
-		 * to change 'travel' to the name of your theme in all the template files.
+		 * If you're building a theme based on travelblog, use a find and replace
+		 * to change 'travelblog' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'travel', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'travelblog', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'travel_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'travel' ),
+			'menu-1' => esc_html__( 'Primary', 'travelblog' ),
 		) );
 
 		/*
@@ -60,7 +60,7 @@ if ( ! function_exists( 'travel_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'travel_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'travelblog_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -81,7 +81,7 @@ if ( ! function_exists( 'travel_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'travel_setup' );
+add_action( 'after_setup_theme', 'travelblog_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -90,47 +90,47 @@ add_action( 'after_setup_theme', 'travel_setup' );
  *
  * @global int $content_width
  */
-function travel_content_width() {
+function travelblog_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'travel_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'travelblog_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'travel_content_width', 0 );
+add_action( 'after_setup_theme', 'travelblog_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function travel_widgets_init() {
+function travelblog_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'travel' ),
+		'name'          => esc_html__( 'Sidebar', 'travelblog' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'travel' ),
+		'description'   => esc_html__( 'Add widgets here.', 'travelblog' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'travel_widgets_init' );
+add_action( 'widgets_init', 'travelblog_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function travel_scripts() {
-	wp_enqueue_style( 'travel-style', get_stylesheet_uri() );
+function travelblog_scripts() {
+	wp_enqueue_style( 'travelblog-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'travel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'travelblog-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'travel-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'travelblog-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'travel_scripts' );
+add_action( 'wp_enqueue_scripts', 'travelblog_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -165,10 +165,3 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
-/**
- * Load floating footbar file.
- */
-function wpb_floating_bar() {
-    wp_enqueue_script( 'wpb-footerbar', get_stylesheet_directory_uri() . '/js/floatingbar.js', array( 'jquery' ) );
-}
-add_action( 'wp_enqueue_scripts', 'wpb_floating_bar' );

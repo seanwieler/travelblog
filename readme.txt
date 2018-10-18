@@ -1,4 +1,4 @@
-=== Travel Blog ===
+=== travelblog ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Travel Blog.
+A starter theme called travelblog.
 
 == Description ==
 
@@ -25,7 +25,7 @@ Custom built travel blog theme
 
 = Does this theme support any plugins? =
 
-Travel Blog includes support for Infinite Scroll in Jetpack.
+travelblog includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
