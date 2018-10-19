@@ -28,7 +28,7 @@ function travel_grid_func($atts, $content=null) {
             array(
                 'taxonomy' => 'country',
                 'field' => 'slug',
-                'terms' => $a['coutry']
+                'terms' => $a['country']
             )
         );
     }
