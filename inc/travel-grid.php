@@ -3,10 +3,14 @@
 add_shortcode("travel_grid", "travel_grid_func");
 
 function travel_grid_func($atts, $content=null) {
+    $a = shortcode_atts(array(
+        'country' => 'all',
+        'city' => 'all'
+    ), $atts);
     ob_start();
     ?>
     <ul>
-        <?php foreach ($atts as $attname => $attval): ?>
+        <?php foreach ($a as $attname => $attval): ?>
             <li><strong><?php echo $attname; ?></strong> <?php echo $attval; ?></li>
         <?php endforeach; ?>
     </ul>
