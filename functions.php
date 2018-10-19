@@ -165,3 +165,27 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+* Make Header Shrink on Page Scroll
+**/
+ 
+add_action ('wp_footer','vr_shrink_head',1);
+function vr_shrink_head() {
+?>
+ 
+<script>
+jQuery(document).ready(function($) {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) { 
+            $('header').addClass('shrink');
+        }
+        else{
+            $('header').removeClass('shrink');
+        }
+    });
+});
+</script>
+ 
+<?php 
+}
