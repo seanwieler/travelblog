@@ -45,7 +45,7 @@
 
 		<nav>
 			<?php
-			echo do_shortcode('[INSERT_ELEMENTOR id="60"]');
+			//echo do_shortcode('[INSERT_ELEMENTOR id="60"]');
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
