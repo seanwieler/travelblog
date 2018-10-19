@@ -31,14 +31,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Normalize
 # Typography
 # Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
 # Accessibility
 # Alignments
 # Clearings
-# Widgets
 # Content
 	## Posts and pages
 	## Comments
@@ -630,6 +625,9 @@ object {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
   display: inline-block;
+}
+.hero-image {
+  position: fixed;
 }
 /*--------------------------------------------------------------
 ## Captions
