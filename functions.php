@@ -178,10 +178,10 @@ function vr_shrink_head() {
 jQuery(document).ready(function($) {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) { 
-            $('header').addClass('shrink');
+            $('section.elementor-element.elementor-element-29351e3.elementor-section-full_width.elementor-section-stretched.elementor-section-height-default.elementor-section-height-default.elementor-section.elementor-top-section').addClass('shrink');
         }
         else{
-            $('header').removeClass('shrink');
+            $('section.elementor-element.elementor-element-29351e3.elementor-section-full_width.elementor-section-stretched.elementor-section-height-default.elementor-section-height-default.elementor-section.elementor-top-section').removeClass('shrink');
         }
     });
 });
