@@ -166,3 +166,8 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
+/**
+ * Load Travel Grid Shortcode
+ */
+require get_template_directory() . '/inc/travel-grid.php';
+
