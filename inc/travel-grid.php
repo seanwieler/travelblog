@@ -6,7 +6,7 @@ function travel_grid_func($atts, $content=null) {
     ob_start();
     ?>
     <ul>
-        <?php foreach ($atts as $attname ==> $attval): ?>
+        <?php foreach ($atts as $attname => $attval): ?>
             <li><strong><?php echo $attname; ?></strong> <?php echo $attval; ?></li>
         <?php endforeach; ?>
     </ul>
