@@ -881,3 +881,6 @@ a:active {
 .widget select {
   max-width: 100%;
 }
+.entry-title {
+  display: none;
+}
