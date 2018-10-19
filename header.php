@@ -44,8 +44,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'travelblog' ); ?></button>
+		<nav>
 			<?php
 			echo do_shortcode('[INSERT_ELEMENTOR id="60"]');
 			?>
