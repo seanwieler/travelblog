@@ -177,7 +177,7 @@ function vr_shrink_head() {
 <script>
 jQuery(document).ready(function($) {
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) { 
+        if ($(window).scrollTop() > 20) { 
             $('.elementor.elementor-60').addClass('shrink');
         }
         else{
