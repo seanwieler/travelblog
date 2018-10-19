@@ -47,10 +47,7 @@
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'travelblog' ); ?></button>
 			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
+			echo do_shortcode([INSERT_ELEMENTOR id="60"]);
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
