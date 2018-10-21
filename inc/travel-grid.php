@@ -37,10 +37,10 @@ function travel_grid_func($atts, $content=null) {
     ob_start();
     if ($travel_query->have_posts()):
         echo '<ul>';
-        while ( $travel_query->have_posts() ) {
+        //while ( $travel_query->have_posts() ) {
             $travel_query->the_post();
             echo '<li>' . get_the_title() . '</li>';
-        }
+        //}
         echo '</ul>';
     else:
         ?>
