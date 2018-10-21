@@ -873,7 +873,7 @@ a:active {
   background: #fff;
   height: 60px;
   z-index: 170;
-  margin: 20px auto;
+  margin: 0 auto;
   border-bottom: 1px solid #dadada;
   width: 100%;
   position: fixed;
