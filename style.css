@@ -882,7 +882,7 @@ a:active {
   padding-inline-start: 0;
 }
 @media only screen and (max-width:670px) {
-  .navmenu {
+  .navmenu .navmenu {
     position: relative;
   }
 }
