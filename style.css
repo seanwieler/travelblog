@@ -870,7 +870,9 @@ a:active {
   display: none;
 }
 .navmenu {
-  position: fixed;
+  position: fixed0
+	left: 0;
+  top: 0;
 }
 footer.entry-footer {
   display: none;
