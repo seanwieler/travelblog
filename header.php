@@ -44,8 +44,8 @@
 		</div><!-- .site-branding -->
 
 		<nav>
-			<!-- <div class="navmenu"><?php
-			echo do_shortcode('[INSERT_ELEMENTOR id="154"]');?></div> -->
+			<?php
+			echo do_shortcode('[INSERT_ELEMENTOR id="192"]');?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
