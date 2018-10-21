@@ -32,7 +32,7 @@ function travel_grid_func($atts, $content=null) {
             )
         );
     }
-    error_log(print_r($args, true));
+    // error_log(print_r($args, true));
     $travel_query = new WP_Query($args);
     ob_start();
     if ($travel_query->have_posts()):
