@@ -36,7 +36,8 @@ function travel_grid_func($atts, $content=null) {
     $travel_query = new WP_Query($args);
     ob_start();
     if ($travel_query->have_posts()):
-        echo '<p>' . $count . '</p>';
+        $count = $travel_query->post_count;
+        echo $count;
         echo '<ul>';
         while ( $travel_query->have_posts() ) {
             $travel_query->the_post();
@@ -49,7 +50,7 @@ function travel_grid_func($atts, $content=null) {
         <p>No blogs found</p>
         <?php
     endif;
-    $count = $custom_posts->post_count;
+    
     return ob_get_clean();
 }
 ?>
