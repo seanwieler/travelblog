@@ -42,7 +42,6 @@ function travel_grid_func($atts, $content=null) {
             echo '<li>' . get_the_title() . '</li>';
         }
         echo '</ul>';
-    }  
     else:
         ?>
         <p>No blogs found</p>
