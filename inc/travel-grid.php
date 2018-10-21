@@ -37,7 +37,7 @@ function travel_grid_func($atts, $content=null) {
     ob_start();
     if ($travel_query->have_posts()):
         $count = $travel_query->post_count;
-        echo '<p>There are' $count 'posts found</p>';
+        echo '<p>There are $count posts found</p>';
         echo '<ul>';
         while ( $travel_query->have_posts() ) {
             $travel_query->the_post();
