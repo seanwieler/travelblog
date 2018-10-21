@@ -870,8 +870,8 @@ a:active {
   display: none;
 }
 .navmenu {
-  position: fixed0
-	left: 0;
+  position: fixed;
+  left: 0;
   top: 0;
 }
 footer.entry-footer {
