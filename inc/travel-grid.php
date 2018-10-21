@@ -36,8 +36,7 @@ function travel_grid_func($atts, $content=null) {
     $travel_query = new WP_Query($args);
     ob_start();
     if ($travel_query->have_posts()):
-        $travel_query->the_title
-        echo the_title;
+        echo $travel_query->the_title
         else:
         ?>
         <p>No blogs found</p>
