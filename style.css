@@ -869,10 +869,17 @@ a:active {
 .site-branding {
   display: none;
 }
-/*.navmenu {
-	position: fixed;
-	top: 0;
-}*/
+.navmenu {
+  background: #fff;
+  height: 60px;
+  z-index: 170;
+  margin: 0 auto;
+  border-bottom: 1px solid #dadada;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 footer.entry-footer {
   display: none;
 }
