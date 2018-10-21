@@ -40,6 +40,7 @@ function travel_grid_func($atts, $content=null) {
         while ( $travel_query->have_posts() ) {
             $travel_query->the_post();
             echo '<li><h1>' . get_the_title() . '</h1></li>';
+            echo '<p>' . get_the_content() . '</p>';
         }
         echo '</ul>';
     else:
