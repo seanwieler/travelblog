@@ -879,11 +879,10 @@ a:active {
   position: fixed;
   top: 0;
   left: 0;
-  padding-inline-start: 0;
 }
 @media only screen and (max-width:670px) {
   .navmenu {
-    position: relative;
+    position: inherit;
   }
 }
 footer.entry-footer {
