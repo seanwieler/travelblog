@@ -36,7 +36,7 @@ function travel_grid_func($atts, $content=null) {
     $travel_query = new WP_Query($args);
     ob_start();
     if ($travel_query->have_posts()):
-        $count = $travel_query->post_count;
+        $count = $travel_query->found_posts;
         echo "<p>There are $count posts found</p>";
         echo '<ul>';
         while ( $travel_query->have_posts() ) {
