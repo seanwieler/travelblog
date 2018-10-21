@@ -869,6 +869,9 @@ a:active {
 .site-branding {
   display: none;
 }
+.navmenu {
+  position: fixed;
+}
 footer.entry-footer {
   display: none;
 }
