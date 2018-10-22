@@ -31,7 +31,7 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<?php
-			echo shortcode('[INSERT_ELEMENTOR id="235"]');
+			echo do_shortcode('[INSERT_ELEMENTOR id="235"]');
 			?>
 		</nav><!-- #site-navigation -->
 		
