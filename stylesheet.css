@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'americaregular';
-    src: url('america-regular-webfont.woff2') format('woff2'),
-         url('america-regular-webfont.woff') format('woff');
+    src: url('/fonts/america-regular-webfont.woff2') format('woff2'),
+         url('/fonts/america-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
